@@ -1,6 +1,8 @@
+"use client";
+
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -44,7 +46,7 @@ const CallToAction = () => {
 
         {/* Contact button with arrow icon */}
         <Link
-          to="/contact"
+          href="/contact"
           className="inline-flex items-center bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white font-medium py-3 px-6 rounded-full transition"
         >
           Me contacter

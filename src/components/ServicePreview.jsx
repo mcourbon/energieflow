@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
+import Image from "next/image";
 // import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -8,7 +11,8 @@ import BackgroundShapes from "./BackgroundShapes";
 gsap.registerPlugin(ScrollTrigger);
 
 const ServicePreview = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
+  
   // useGSAP(() => {
   //   gsap.from(
   //     ["#service-1", "#service-2", "#service-3", "#service-4"],
@@ -63,8 +67,8 @@ const ServicePreview = () => {
     event.preventDefault();
     event.stopPropagation();
 
-    // Navigate with React Router
-    navigate(`/seances#${anchorId}`);
+    // Navigate with Next.js App Router
+    router.push(`/seances#${anchorId}`);
   };
 
   return (
@@ -108,12 +112,13 @@ const ServicePreview = () => {
           >
             {/* Image container with fixed aspect ratio */}
             <div className="relative w-full aspect-[4/6] pointer-events-none">
-              <img
+              <Image
                 src={service.image}
                 alt={service.alt}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                loading="lazy"
-                draggable={false}
+                fill
+                className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                sizes="(max-width: 640px) 50vw, (max-width: 768px) 50vw, 25vw"
+                priority={false}
               />
 
               {/* Gradient overlay for text readability */}

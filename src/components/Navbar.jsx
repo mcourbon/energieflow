@@ -1,5 +1,7 @@
+"use client";
+
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,7 +12,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="text-xl font-bold text-green-500 cursor-pointer">
           <Link
-            to="/"
+            href="/"
             onClick={() => {
               setMenuOpen(false);
               window.scrollTo({ top: 0, behavior: "smooth" });
@@ -24,7 +26,7 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-6 text-gray-700 font-medium">
           <li>
             <Link
-              to="/a-propos"
+              href="/apropos"
               className="hover:text-green-500 transition"
               onClick={() => setMenuOpen(false)}
             >
@@ -33,7 +35,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/seances"
+              href="/seances"
               className="hover:text-green-500 transition"
               onClick={() => setMenuOpen(false)}
             >
@@ -42,7 +44,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/contact"
+              href="/contact"
               className="hover:text-green-500 transition"
               onClick={() => setMenuOpen(false)}
             >
@@ -52,7 +54,10 @@ const Navbar = () => {
         </ul>
 
         {/* Desktop button */}
-        <Link to="/contact" className="hidden md:inline-block bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 rounded-full px-4 py-2 shadow text-white hover:bg-green-400 transition">
+        <Link 
+          href="/contact" 
+          className="hidden md:inline-block bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 rounded-full px-4 py-2 shadow text-white transition"
+        >
           Prendre rendez-vous
         </Link>
 
@@ -87,23 +92,32 @@ const Navbar = () => {
         <div className="md:hidden absolute bg-white w-full left-0 top-full -mt-px shadow-md px-6 pb-4 z-10">
           <ul className="flex flex-col gap-4 text-gray-700 font-medium">
             <li>
-              <Link to="/a-propos" onClick={() => setMenuOpen(false)}>
+              <Link 
+                href="/apropos" 
+                onClick={() => setMenuOpen(false)}
+              >
                 À propos
               </Link>
             </li>
             <li>
-              <Link to="/seances" onClick={() => setMenuOpen(false)}>
+              <Link 
+                href="/seances" 
+                onClick={() => setMenuOpen(false)}
+              >
                 Séances
               </Link>
             </li>
             <li>
-              <Link to="/contact" onClick={() => setMenuOpen(false)}>
+              <Link 
+                href="/contact" 
+                onClick={() => setMenuOpen(false)}
+              >
                 Contact
               </Link>
             </li>
           </ul>
-          <Link 
-            to="/contact" 
+          <Link
+            href="/contact"
             className="block mt-6 w-full bg-green-500 rounded-full px-4 py-2 shadow text-white hover:bg-green-400 transition text-center"
             onClick={() => setMenuOpen(false)}
           >

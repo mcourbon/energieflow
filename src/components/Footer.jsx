@@ -1,6 +1,8 @@
+"use client";
+
 import React from "react";
 import { Facebook, Instagram, Mail } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -26,7 +28,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to="/a-propos" className="hover:underline">
+              <Link to="/apropos" className="hover:underline">
                 À propos
               </Link>
             </li>
