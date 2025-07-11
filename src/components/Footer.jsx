@@ -23,22 +23,22 @@ const Footer = () => {
           <h4 className="text-lg font-semibold mb-4">Liens utiles</h4>
           <ul className="space-y-2 text-green-600 text-sm">
             <li>
-              <Link to="/" className="hover:underline">
+              <Link href="/" className="hover:underline">
                 Accueil
               </Link>
             </li>
             <li>
-              <Link to="/apropos" className="hover:underline">
+              <Link href="/apropos" className="hover:underline">
                 À propos
               </Link>
             </li>
             <li>
-              <Link to="/seances" className="hover:underline">
+              <Link href="/seances" className="hover:underline">
                 Séances
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="hover:underline">
+              <Link href="/contact" className="hover:underline">
                 Contact
               </Link>
             </li>
@@ -50,13 +50,13 @@ const Footer = () => {
           <h4 className="text-lg font-semibold mb-4">Informations légales</h4>
           <ul className="space-y-2 text-green-600 text-sm">
             <li>
-              <Link to="/mentions-legales" className="hover:underline">
+              <Link href="/mentions-legales" className="hover:underline">
                 Mentions légales
               </Link>
             </li>
             <li>
               <Link
-                to="/politique-de-confidentialite"
+                href="/politique-de-confidentialite"
                 className="hover:underline"
               >
                 Politique de confidentialité
@@ -76,6 +76,15 @@ const Footer = () => {
                 className="hover:underline"
               >
                 contact@energieflow.fr
+              </a>
+            </li>
+            {/* Phone contact */}
+            <li className="flex items-center gap-2">
+              <a
+                href="tel:+33638710076"
+                className="hover:underline"
+              >
+                06 38 71 00 76
               </a>
             </li>
 
