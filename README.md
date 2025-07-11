@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Site Web Thérapeute
 
-## Getting Started
+Un site web moderne et élégant conçu spécialement pour les thérapeutes, offrant une expérience utilisateur fluide et professionnelle.
+À retrouver ici : https://energieflow.vercel.app/
 
-First, run the development server:
+## 🌟 Fonctionnalités
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Design responsive** - Parfaitement adapté à tous les appareils
+- **Interface moderne** - Design épuré et professionnel
+- **Animations fluides** - Expérience utilisateur enrichie avec GSAP
+- **Performance optimisée** - Chargement rapide et SEO-friendly
+- **Navigation intuitive** - Parcours utilisateur simplifié
+
+## 🛠️ Technologies utilisées
+
+- **[Next.js](https://nextjs.org/)** - Framework React pour la production
+- **[React](https://reactjs.org/)** - Bibliothèque JavaScript pour l'interface utilisateur
+- **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS utilitaire
+- **[GSAP](https://greensock.com/gsap/)** - Bibliothèque d'animations haute performance
+
+## 🚀 Installation
+
+1. **Cloner le repository**
+   ```bash
+   git clone https://github.com/votreusername/votre-repo.git
+   cd votre-repo
+   ```
+
+2. **Installer les dépendances**
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
+
+3. **Lancer le serveur de développement**
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
+
+4. **Ouvrir dans le navigateur**
+   
+   Rendez-vous sur [http://localhost:3000](http://localhost:3000)
+
+## 🎨 Personnalisation
+
+### Couleurs et thème
+Les couleurs peuvent être modifiées dans le fichier `tailwind.config.js` :
+
+```javascript
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        // Vos couleurs personnalisées
+      }
+    }
+  }
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Animations GSAP
+Les animations sont configurées dans les composants correspondants. Vous pouvez ajuster les durées et effets selon vos préférences.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📱 Sections du site
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Accueil** - Présentation et accroche
+- **À propos** - Profil du thérapeute
+- **Séances** - Liste des thérapies proposées
+- **Contact** - Informations et formulaire de contact
 
-## Learn More
+## 📞 Contact
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Pour toute question ou suggestion concernant ce projet, n'hésitez pas à me contacter.
