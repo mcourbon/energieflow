@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "../components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Energie Flow - Sophrologie",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       <body className="font-sans antialiased">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
