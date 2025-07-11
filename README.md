@@ -1,7 +1,7 @@
 # Site Web Thérapeute
 
 Un site web moderne et élégant conçu spécialement pour les thérapeutes, offrant une expérience utilisateur fluide et professionnelle.
-À retrouver ici : https://template-bien-etre.vercel.app/
+À retrouver ici : https://energieflow.vercel.app/
 
 ## 🌟 Fonctionnalités
 
