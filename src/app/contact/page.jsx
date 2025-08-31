@@ -288,7 +288,7 @@ const Contact = () => {
                   onChange={handleChange}
                   disabled={isLoading}
                   className="w-full border-2 border-green-200 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-green-400 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-                  placeholder="Votre nom"
+                  placeholder="Votre nom prénom"
                   required
                 />
               </div>
